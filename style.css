@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+nav {
+  background: #0082e6;
+  height: 96px;
+  width: 100%;
+}
+
+label.logo {
+  color: white;
+  font-size: 36px;
+  line-height: 70px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: white;
+  font-size: 12px;
+  line-height: 0px;
+  padding: 0 147px;
+  font-weight: normal;
+}
+
+.nav-header {
+  display: flex;
+  flex-direction: column;
+}

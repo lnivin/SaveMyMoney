@@ -13,14 +13,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Save My Money</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: #a6feff; width: 50%; margin: 0 auto;">
-  <div style="width: 50%; margin: 0 auto;">
-    <h1>Save My Money</h1>
-    <span>Save money from your friends!</span>
-  </div>
+<body>
+  <nav>
+    <div class="nav-header">
+      <label class="logo">Save My Money</label>
+      <span class="subtitle">Save money from your friends!</span>
+    </div>
+  </nav>
   <hr>
-  <div style="width: 50%; margin: 0 auto;>
+  <div>
     <form action="create.php" method="POST">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name">
