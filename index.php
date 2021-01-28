@@ -14,7 +14,7 @@
       <label for="name">Name:</label>
       <input type="text" id="name" name="name">
       <br/>
-      <label for="score">Score:</label>
+      <label for="score">Amount:</label>
       <input type="number" id="score" name="score">
       <br/>
       <button type="submit">Add</button>
