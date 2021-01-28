@@ -14,11 +14,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Save My Money</title>
 </head>
-<body>
-  <div>
+<body style="background-color: #a6feff; width: 50%; margin: 0 auto;">
+  <div style="width: 50%; margin: 0 auto;">
     <h1>Save My Money</h1>
     <span>Save money from your friends!</span>
-    <hr>
+  </div>
+  <hr>
+  <div style="width: 50%; margin: 0 auto;>
     <form action="create.php" method="POST">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name">
