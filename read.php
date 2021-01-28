@@ -2,13 +2,11 @@
   include 'db.php';
   $sql = "select * from demo_table";
   $result = $conn->query($sql);
-  echo "<tr>";
-  echo "<th>Name</th>";
-  echo "<th>Money</th>";
-  echo "<th>Actions</th>";
-  echo "</tr>";
-  $test = 'hola';
+  $names = Array();
+  $scores = Array();
   while($row = $result->fetch_assoc()) {
+    array_push($names,$row['name']);
+    array_push($scores,$row['score']);
     echo "<tr>";
     if ($row['id'] == $_GET['id']) {
       echo '<form action="update.php" method="POST">';
@@ -25,6 +23,5 @@
     echo '<td><a href="delete.php?id=' . $row['id'] . '" role="button">Delete</a></td>';
     echo "</tr>";
   }
-  echo $row;
   $conn->close();
 ?>
