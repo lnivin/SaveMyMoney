@@ -10,6 +10,7 @@
 
     gtag('config', 'G-NCVS4D36R6');
   </script>
+  <script data-ad-client="ca-pub-8474835453138451" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Save My Money</title>
