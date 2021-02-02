@@ -15,35 +15,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Save My Money</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav>
-    <div class="nav-header">
-      <label class="logo">Save My Money</label>
-      <span class="subtitle">Save money from your friends!</span>
+    <div class="logo-container">
+      <label class="logo"><i>Save My Money!</i></label>
     </div>
   </nav>
-  <hr>
-  <div>
-    <form action="create.php" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name">
-      <br/>
-      <label for="score">Amount:</label>
-      <input type="number" id="score" name="score">
-      <br/>
-      <button type="submit">Add</button>
-    </form>
-    <table class="table">
-      <tbody>
-        <?php include 'read.php'; ?>
-      </tbody>
-    </table>
-    <button onclick="showSavedMoney()">Show saved money</button>
-    <p id="msg"></p>
-  </div>
+  <form action="create.php" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <br/>
+    <label for="score">Amount:</label>
+    <input type="number" id="score" name="score">
+    <br/>
+    <button type="submit">Add</button>
+  </form>
+  <table class="table">
+    <tbody>
+      <?php include 'read.php'; ?>
+    </tbody>
+  </table>
+  <button onclick="showSavedMoney()">Show saved money</button>
+  <p id="msg"></p>
   <script type="text/javascript">
     var names = <?php echo json_encode($names); ?>;
     var scores = <?php echo json_encode($scores); ?>;
